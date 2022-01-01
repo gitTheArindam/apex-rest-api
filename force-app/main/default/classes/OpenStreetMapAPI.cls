@@ -1,3 +1,9 @@
+/**
+ * Description: Class used to search the OpenStreetMap dataset using Nominatim API.
+ *              API Documentation: https://nominatim.org/release-docs/develop/api/Overview/
+ *
+ * Verson: 2.0.0
+ */
 public with sharing class OpenStreetMapAPI {
     /**
      * Description: Inner class to store the API callout response
@@ -113,7 +119,7 @@ public with sharing class OpenStreetMapAPI {
      * Return Type: query String.
      *
      *              Example: The above input returns the below output:
-     *              https://nominatim.openstreetmap.org/search?city=Kolkata&country=India&format=json&limit=1&accept-language=en-US
+     *              https://nominatim.openstreetmap.org/search?city=Kolkata&country=India&format=jsonv2&limit=1&accept-language=en-US
      */
     public static String generateURIEndpoint(Map<String, String> params) {
         String endPoint = System.Label.OpenStreetMap_Base_URL;
