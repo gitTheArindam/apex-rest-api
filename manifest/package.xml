@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>OpenStreetMapAPI</members>
+        <members>OpenStreetMapAPITest</members>
         <members>OpenStreetMapConstants</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>OpenStreetMap_Base_URL</members>
         <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>OpenStreetMapAPIMock</members>
+        <name>StaticResource</name>
     </types>
     <version>52.0</version>
 </Package>
