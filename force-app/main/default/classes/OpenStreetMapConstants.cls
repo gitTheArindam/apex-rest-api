@@ -5,6 +5,11 @@ public with sharing class OpenStreetMapConstants {
     public static final String APPLICATION_JSON = 'application/json';
     public static final Integer SUCCESS_STATUS_CODE = 200;
     public static final List<String> AVAILABLE_QUERY_PARAMS = new List<String>{
-        'street', 'city', 'county', 'state', 'country', 'postalcode'
+        'street',
+        'city',
+        'county',
+        'state',
+        'country',
+        'postalcode'
     };
 }
