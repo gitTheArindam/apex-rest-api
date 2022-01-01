@@ -115,8 +115,9 @@ public with sharing class OpenStreetMapAPI {
         List<String> paramList = new List<String>();
         if (params != null) {
             for (String param : params.keySet()) {
-                if (params.get(param) != null) {
-                    String p = param.toLowerCase() + '=' + params.get(param);
+                if (param != null && params.get(param) != null && 
+                    OpenStreetMapConstants.AVAILABLE_QUERY_PARAMS.contains(param.toLowerCase())) {
+                    String p = param.toLowerCase() + '=' + (params.get(param)).toLowerCase();
                     paramSet.add(p);
                 }
             }
