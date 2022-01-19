@@ -24,8 +24,8 @@ Map<String, Object> response = OpenStreetMapAPI.search(new Map<String, String> {
 -   To retrieve the values from Map
 
 ```Java
-response.get('lat'); // => '22.5726723'
-response.get('lon'); // => '88.3638815'
+response?.get('lat'); // => '22.5726723'
+response?.get('lon'); // => '88.3638815'
 ```
 
 -   To get the response as JSON String
@@ -42,8 +42,8 @@ String response = OpenStreetMapAPI.search(new Map<String, String> {
 ```JavaScript
 let responseJson = JSON.parse(response);
 
-responseJson['lat']; // => "22.5726723"
-responseJson['lon']; // => "88.3638815"
+responseJson["lat"]; // => "22.5726723"
+responseJson["lon"]; // => "88.3638815"
 ```
 
 **Available query parameters**
